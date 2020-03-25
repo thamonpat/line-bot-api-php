@@ -24,9 +24,9 @@ if ( sizeof($request_array['events']) > 0 )
 		$name_dev = "Thamonpat Danchaodang";
 	   	$id_dev = "59160655";
 		if(($text == "ขอทราบยอด covid-19")||($text == "covid-19")||($text == "อยากทราบยอด COVID-19 ครับ")){
-			$patient = 100;
-			$remedied = 50;
-			$deceased = 25;
+			$patient = 934;
+			$remedied = 70;
+			$deceased = 4;
 			$reply_message = '"รายงานสถานการณ์ ยอดผู้ติดเชื้อไวรัสโคโรนา 2019 (COVID-19) ในประเทศไทย" ผู้ป่วยสะสม จำนวน '.$patient.' ราย ผู้เสียชีวิต จำนวน '.$deceased.' ราย รักษาหาย จำนวน '.$remedied.' ราย ผู้รายงานข้อมูล: '.$name_dev;
 		}
 		else if(($text== "ข้อมูลส่วนตัว")||($text== "ข้อมูล")||($text== "ข้อมูลส่วนตัวของผู้พัฒนาระบบ")){
