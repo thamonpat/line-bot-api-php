@@ -21,13 +21,16 @@ if ( sizeof($request_array['events']) > 0 )
    if( $event['message']['type'] == 'text' )
    {
 		$text = $event['message']['text'];
-		
-		if(($text == "อุณหภูมิตอนนี้")||($text == "อุณหภูมิวันนี้")||($text == "อุณหภูมิ")){
-			$temp = 27;
-			$reply_message = 'ขณะนี้อุณหภูมิที่ '.$temp.'°C องศาเซลเซียส';
+		$name_dev = "Thamonpat Danchaodang";
+	   	$id_dev = "59160655";
+		if(($text == "ขอทราบยอด covid-19")||($text == "อุณหภูมิวันนี้")||($text == "อุณหภูมิ")){
+			$patient = ;
+			$Remedied = ;
+			$Deceased = ;
+			$reply_message = '"รายงานสถานการณ์ ยอดผู้ติดเชื้อไวรัสโคโรนา 2019 (COVID-19) ในประเทศไทย" ผู้ป่วยสะสม จำนวน '.$patient.' ราย ผู้เสียชีวิต จำนวน '.$Deceased.' ราย รักษาหาย จำนวน '.$Remedied.' ราย ผู้รายงานข้อมูล: '.$name_dev;
 		}
 		else if(($text== "ตอนนี้อยู่ที่ไหน")||($text== "ตอนนี้อยู่ไหน")||($text== "อยู่ที่ไหน")||($text== "อยู่ไหน")){
-			$reply_message = 'ขณะนี้อยู่ที่ห้องเรียน IF-5T05 ...!!!';
+			$reply_message = 'ชื่อ : '.$name_dev.' รหัสนิสิต : '.$id_dev;
 		}
 		else
 		{
