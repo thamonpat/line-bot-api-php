@@ -23,13 +23,13 @@ if ( sizeof($request_array['events']) > 0 )
 		$text = $event['message']['text'];
 		$name_dev = "Thamonpat Danchaodang";
 	   	$id_dev = "59160655";
-		if(($text == "ขอทราบยอด covid-19")||($text == "อุณหภูมิวันนี้")||($text == "อุณหภูมิ")){
+		if(($text == "ขอทราบยอด covid-19")||($text == "covid-19")||($text == "อยากทราบยอด COVID-19 ครับ")){
 			$patient = 100;
 			$remedied = 50;
 			$deceased = 25;
 			$reply_message = '"รายงานสถานการณ์ ยอดผู้ติดเชื้อไวรัสโคโรนา 2019 (COVID-19) ในประเทศไทย" ผู้ป่วยสะสม จำนวน '.$patient.' ราย ผู้เสียชีวิต จำนวน '.$deceased.' ราย รักษาหาย จำนวน '.$remedied.' ราย ผู้รายงานข้อมูล: '.$name_dev;
 		}
-		else if(($text== "ตอนนี้อยู่ที่ไหน")||($text== "ตอนนี้อยู่ไหน")||($text== "อยู่ที่ไหน")||($text== "อยู่ไหน")){
+		else if(($text== "ข้อมูลส่วนตัว")||($text== "ข้อมูล")||($text== "ข้อมูลส่วนตัวของผู้พัฒนาระบบ")){
 			$reply_message = 'ชื่อ : '.$name_dev.' รหัสนิสิต : '.$id_dev;
 		}
 		else
